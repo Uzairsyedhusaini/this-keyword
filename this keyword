@@ -1,0 +1,32 @@
+ class Student{
+    private int age;
+   private String name="Arham";
+    public void setData1(int age){
+        this.age=age;
+        
+    }
+    public void setData2(){
+        name="Addu";
+        
+    }
+    public void print(){
+        System.out.println(age+" "+name);
+    }
+
+ }
+public class Main{
+    public static void main(String []args){
+    Student obj=new Student();
+    Student obj1=new Student();
+    // obj.age;
+    // obj.name;
+    obj.setData1(20);
+    obj1.setData1(25);
+    obj.print();
+    obj1.print();
+    /*Output:-
+     * 0  0(Without this)
+     * 20   25(with this)
+     */
+    
+}}
